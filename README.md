@@ -4,3 +4,4 @@ You can calculate the reverberation of a room by entering various parameters suc
 and various objects within the room, using a simple GUI. 
 The program then processes the T60 at different frequencies, any standing waves and creates graphs to display the results.
 
+![Plot1](/img/Plot_21-09-2020_174315.png)

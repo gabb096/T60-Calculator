@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>T60 Index</title>
+</head>
+	<body>
+	<form action="result" method="POST">
+			<h1 style="text-align:center" >Calcolo del Tempo di Riverbero </h1>
+		<p>
+				<h3>Inserisci le dimensioni del tuo ambiente (in centimetri)</h3>
+
+				<input type="number" name="Width"  id="Width"   min="1"  placeholder="Larghezza in Cm"  required > 
+				<input type="number" name="Height" id="Height"  min="1"  placeholder="Altezza in Cm" required> 
+				<input type="number" name="Depth"  id="Depth"   min="1"  placeholder="Profondità in Cm"  required> 
+			<br>
+		</p>
+
+		<p>
+			<h5>Ora servono altre informazioni sui materiali della stanza</h5>
+
+			<label for="Perimeter_wall"> Muri perimetrali :</label>
+			<input list="List1" name="Perimeter_wall" id="Perimeter_wall" required >
+ 		<br>
+			<label for="Ceiling"> Soffitto : </label> 
+			<input list="List1" name="Ceiling" id="Ceiling" required>
+	<br>
+			<label for="Floor"> Pavimento : </label>
+			<input list="List1" name="Floor" id="Floor" required>
+			
+		<datalist id="List1">
+			<option value="Muratura">
+			<option value="Intonacato">
+			<option value="Marmo_Lucido">
+			<option value="Parquet_Incollato">
+			<option value="Parquet_Su_Listelli_Di_Legno">
+			<option value="Ceramicato">
+			<option value="Linoleum">
+		</datalist>
+	<br>
+		</p>	
+			<p>
+				<label for="Windows"> Numero di ante delle fineste : </label> 
+					<input type="number" name="Windows" id="Windows" min="0" max="50">		
+			
+				<label for="Doors" >Numero di porte : </label> 
+					<input type="number" name="Doors" id="Doors" min="0" max="50">
+			<br>
+			<br>	
+				<label>Arredamento : </label>
+			<br>
+				<label for="obj0" >1 : </label> 
+					<input list="List2" name="obj0" id="obj0" placeholder="Arredamento" >
+					<input type="number" name="dim0" id="dim0" min="0" placeholder="Superficie in Cm^2">
+
+				<label for="obj3" >4 : </label> 
+					<input list="List2" name="obj3" id="obj3" placeholder="Arredamento">
+					<input type="number" name="dim3" id="dim3" min="0" placeholder="Superficie in Cm^2">
+			<br>	
+				<label for="obj1" >2 : </label> 
+					<input list="List2" name="obj1" id="obj1" placeholder="Arredamento">
+					<input type="number" name="dim1" id="dim1" min="0" placeholder="Superficie in Cm^2">
+
+				<label for="obj4" >5 : </label> 
+					<input list="List2" name="obj4" id="obj4" placeholder="Arredamento">
+					<input type="number" name="dim4" id="dim4" min="0" placeholder="Superficie in Cm^2">
+			<br>	
+				<label for="obj2" >3 : </label> 
+					<input list="List2" name="obj2" id="obj2" placeholder="Arredamento">
+					<input type="number" name="dim2" id="dim2" min="0" placeholder="Superficie in Cm^2">
+
+				<label for="obj5" >6 : </label> 
+					<input list="List2" name="obj5" id="obj5" placeholder="Arredamento">
+					<input type="number" name="dim5" id="dim5" min="0" placeholder="Superficie in Cm^2 ">
+				
+				<datalist id="List2">
+					<option value="Moquette_Su_Cemento">
+					<option value="Tendaggio_Sottile">
+					<option value="Tappeto_Pesante">
+					<option value="Perlinato_Inchiodato">
+					<option value="Lastra_Di_Vetro_O_Specchio">
+					<option value="Intonaco_Acustico_Sp._12_mm">
+					<option value="Pannelli_In_Fibra_Di_Vetro">
+					<option value="Pannelli_In_Fibra_Di_Legno">
+					<option value="Sughero_Incollato_Alla_Parete">
+					<option value="Sedia_In_Legno_Libera">
+					<option value="Sedia_Poco_Imbottita_Libera">
+					<option value="Poltrona_Imbottita_Non_Occupata">
+					<option value="Poltrona_Imbottita_Occupata">
+					<option value="Persona_Adulta_In_Piedi">
+				</datalist>
+			<br>
+			<br>
+			</p>	
+				<button type="submit"> INVIA </button>
+		</form>
+	</body>
+</html>

@@ -1,0 +1,30 @@
+ # Il NomeChiave non deve avere spazi altrimenti redis non lo accetta
+# Formattazione :
+# NomeChiave [125Hz,250Hz,500Hz,1KHz,2KHz,4KHz]
+#
+#
+# Importante che ci siano 2 valori dopo il punto, 0.2 NON va bene, 0.20 ok
+#
+Muratura [0.02,0.02,0.03,0.04,0.05,0.07]
+Intonacato [0.01,0.01,0.02,0.02,0.03,0.03]
+Marmo_Lucido [0.01,0.01,0.01,0.02,0.02,0.02]
+Parquet_Incollato [0.02,0.03,0.04,0.05,0.05,0.10]
+Parquet_Su_Listelli_Di_Legno [0.20,0.15,0.10,0.10,0.09,0.07]
+Ceramicato [0.01,0.01,0.02,0.02,0.03,0.03]
+Linoleum [0.02,0.02,0.03,0.03,0.04,0.04]
+Moquette_Su_Cemento [0.05,0.08,0.21,0.26,0.27,0.30]
+Finestre_Chiuse [0.10,0.04,0.03,0.02,0.02,0.02]
+Porta_In_Legno [0.12,0.11,0.10,0.09,0.08,0.07]
+Tendaggio_Sottile [0.08,0.30,0.50,0.50,0.60,0.60]
+Tappeto_Pesante [0.10,0.20,0.25,0.30,0.30,0.30]
+Perlinato_Inchiodato [0.60,0.30,0.10,0.09,0.09,0.09]
+Lastra_Di_Vetro_O_Specchio [0.03,0.02,0.02,0.02,0.02,0.02]
+Intonaco_Acustico_Sp_12_mm [0.10,0.15,0.20,0.25,0.30,0.35]
+Pannelli_In_Fibra_Di_Vetro [0.12,0.38,0.62,0.74,0.77,0.78]
+Pannelli_In_Fibra_Di_Legno [0.15,0.25,0.40,0.51,0.51,0.40]
+Sughero_Incollato_Alla_Parete [0.06,0.04,0.06,0.19,0.23,0.24]
+Sedia_In_Legno_Libera [0.03,0.05,0.05,0.10,0.15,0.10]
+Sedia_Poco_Imbottita_Libera [0.03,0.05,0.05,0.10,0.15,0.10]
+Poltrona_Imbottita_Non_Occupata [0.10,0.20,0.30,0.30,0.30,0.35]
+Poltrona_Imbottita_Occupata [0.20,0.40,0.45,0.45,0.50,0.45]
+Persona_Adulta_In_Piedi [0.23,0.32,0.42,0.42,0.46,0.46]

@@ -1,0 +1,15 @@
+Per accendere il server vai su terminale e inserisci "redis-server" questo accende il server 
+se vuoi interagire col server da terminale :
+apri un altro terminale e inserisci "cd /Users/gab/Desktop/redis-5.0.8/src" 
+una volta nella cartella src scrivi "redis-cli" da adesso puoi usare redis da terminale
+
+cd /Users/gab/Desktop/redis-5.0.8/src && redis-cli
+
+per fare in una botta sola
+
+Lista di ogni chiave nel database "get key *"
+Se una delle chiavi contiene una lista :
+per aggiungere in testa LPUSH 
+per aggiungere in coda RPUSH
+per le liste non si usa GET ma LRANGE(key, start, stop)
+start = 1 e stop = -1 mi da tutti gli elementi uno alla volta
